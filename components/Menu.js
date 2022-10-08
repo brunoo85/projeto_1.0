@@ -59,6 +59,12 @@ export default function Menu({navigation}) {
         img: require('../assets/imagens/prime.png'),
         texto: 'informações complementares para nivel de teste informações complementares para nivel de teste',
       },
+      {
+        id: 10,
+        nome: 'Prime Video',
+        img: require('../assets/imagens/prime.png'),
+        texto: 'informações complementares para nivel de teste informações complementares para nivel de teste',
+      },
     ];
   
     function renderItem({ item }){
