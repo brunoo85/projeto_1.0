@@ -19,7 +19,7 @@ export default function Menu({navigation}) {
       },
       {
         id: 3,
-        nome: 'GloboPlay',
+        nome: 'Gloaaaaaaaasay',
         img: require('../assets/imagens/globoplay.jpg'),
         texto: 'Valor: 24,90 por mês ',
       },

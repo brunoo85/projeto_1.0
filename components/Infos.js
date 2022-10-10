@@ -21,7 +21,7 @@ export default function Infos({navigation}){
         },
         {
           id: 3,
-          nome: 'GloboPlay',
+          nome: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
           img: require('../assets/imagens/globoplay.jpg'),
           texto: 'Valor: 24,90 por mês ',
         },

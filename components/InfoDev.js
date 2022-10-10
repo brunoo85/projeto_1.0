@@ -17,9 +17,11 @@ export default function InfoDev(){
               <Text style={styles.Texto2}>    O seguinte projeto faz parte da avaliação da disciplina Desenvolvimento para dispositivos Móveis (ECT2525),
             ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. Tratem de dar 5 estrelas no app pra minha nota ser maior.💋💋 </Text>
              <Text style={styles.Texto1}>{'\n'} Sobre o Desenvolvedor</Text>
-              <Image style={styles.imgConfig} source={require('../assets/imagens/starz.png')}/>
-              <Text style={styles.Texto2}>    O seguinte projeto faz parte da avaliação da disciplina Desenvolvimento para dispositivos Móveis (ECT2525),
-            ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. Tratem de dar 5 estrelas no app pra minha nota ser maior. </Text>
+              <Image style={styles.imgConfig} source={require('../assets/imagens/perfilDev.jpg')} />
+              <Text style={styles.Texto2}>    Bruno Cesar, atualmente com 21 anos, é um (sofredor) estudante de c&t e possui
+                bem mais carisma do que habilidades em programação, mas está indo bem, eu acho. </Text>
+                <Text style={styles.Texto2}>    Este projeto foi idealizado em torno do mercado de séries pois é 
+                algo que ele possui muito interesse e tem propriedade pra falar do assunto (mentira).</Text>
             </View>
         </View>
     );
@@ -41,10 +43,9 @@ const styles = StyleSheet.create({
     },
     imgConfig:{
         backgroundColor :'white',
-        height:80,
-        width: 80,
-        borderRadius: 40,
-        marginRight: 10,
+        height:200,
+        width: 200,
+        aspectRatio: 0.99,
     },
     Texto1: {
       color: 'white',
