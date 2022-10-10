@@ -7,12 +7,19 @@ export default function InfoDev(){
     return(
         <View style={styles.inicio}>
             <View style={styles.bloco}>
-            <Text style={styles.Texto1}>Catálogo de Streaming</Text>
-            <Text style={styles.Texto2}>    Para te ajudar na escolha do que assistir ou qual streaming
+              <Text style={styles.Texto1}>Catálogo de Streaming</Text>
+              <Text style={styles.Texto2}>    Para te ajudar na escolha do que assistir ou qual streaming
             escolher para fazer sua assinatura, o Catálogo de Streaming te ajuda nisso. </Text>
-            <Text style={styles.Texto2}>    Com informações sobre os principais streamings de 
+              <Text style={styles.Texto2}>    Com informações sobre os principais streamings de 
             video no Brasil e recomendações feitas por nossa curadoria especializada (o desenvolvedor da ferramenta), este 
-            aplicativo é uma ferramenta perfeita para você que está procurando praticidade e recomendações de qualidade</Text>
+            aplicativo é uma ferramenta perfeita para você que está procurando praticidade e recomendações de qualidade.</Text>
+              <Text style={styles.Texto1}>{'\n'} Sobre o Projeto</Text>
+              <Text style={styles.Texto2}>    O seguinte projeto faz parte da avaliação da disciplina Desenvolvimento para dispositivos Móveis (ECT2525),
+            ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. Tratem de dar 5 estrelas no app pra minha nota ser maior.💋💋 </Text>
+             <Text style={styles.Texto1}>{'\n'} Sobre o Desenvolvedor</Text>
+              <Image style={styles.imgConfig} source={require('../assets/imagens/starz.png')}/>
+              <Text style={styles.Texto2}>    O seguinte projeto faz parte da avaliação da disciplina Desenvolvimento para dispositivos Móveis (ECT2525),
+            ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. Tratem de dar 5 estrelas no app pra minha nota ser maior. </Text>
             </View>
         </View>
     );
