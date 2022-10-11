@@ -9,23 +9,23 @@ export default function Menu({navigation}) {
         id: 1,
         nome: 'Starz Play',
         img: require('../assets/imagens/starz.png'),
-        texto: 'Valor: 14:90 por mês \n Clique para recomendações',
+        texto: 'Valor: R$ 14,90 por mês \n Clique para mais informações e recomendações ',
       },
       {
         id: 2,
         nome: 'Paramount Plus',
         img: require('../assets/imagens/paramount.png'),
-        texto: 'Serviço de Streaming operado pela Paramount com conteudos originais, das transmissões da CBS e conteúdos da biblioteca da Paramount Global',
+        texto: 'Valor: R$ 14,90 por mês \n Clique para mais informações e recomendações ',
       },
       {
         id: 3,
-        nome: 'Gloaaaaaaaasay',
+        nome: 'Globoplay',
         img: require('../assets/imagens/globoplay.jpg'),
         texto: 'Valor: 24,90 por mês ',
       },
       {
         id: 4,
-        nome: 'Crunchroll',
+        nome: 'Crunchyroll',
         img: require('../assets/imagens/crunch.png'),
         texto: 'informações complementares para nivel de teste informações complementares para nivel de teste',
       },
@@ -61,8 +61,8 @@ export default function Menu({navigation}) {
       },
       {
         id: 10,
-        nome: 'Prime Video',
-        img: require('../assets/imagens/prime.png'),
+        nome: 'Apple Tv+',
+        img: require('../assets/imagens/apple.png'),
         texto: 'informações complementares para nivel de teste informações complementares para nivel de teste',
       },
     ];
@@ -100,6 +100,8 @@ export default function Menu({navigation}) {
         },
         infoEscolha:{
           flexShrink:1,
+          alignItens: 'center',
+          justifyContent: 'center',
         },
         imgConfig:{
             backgroundColor :'white',
