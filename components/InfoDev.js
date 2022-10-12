@@ -1,7 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useEffect, useState } from 'react';
-import { View , Image, StyleSheet, FlatList, Text, TouchableOpacity} from 'react-native';
-import { FontAwesome5} from '@expo/vector-icons';
+import React from 'react';
+import { View , Image, StyleSheet, Text } from 'react-native';
 
 export default function InfoDev(){
     return(
@@ -38,15 +36,6 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'flex-start',
     },
-    infoEscolha:{
-      flexShrink:1,
-    },
-    imgConfig:{
-        backgroundColor :'white',
-        height:200,
-        width: 200,
-        aspectRatio: 0.99,
-    },
     Texto1: {
       color: 'white',
       fontSize: 30,
@@ -58,4 +47,9 @@ const styles = StyleSheet.create({
       fontSize: 16,
       flexShrink:1,
     },
+    imgConfig:{
+      backgroundColor :'white',
+      height: 200,
+      width: 200,
+  },
   });

@@ -61,21 +61,72 @@ export default function Infos({navigation}){
           img: require('../assets/imagens/prime.png'),
           texto: 'informações complementares para nivel de teste informações complementares para nivel de teste',
         },
-        
+        {
+          id: 10,
+          nome: 'Disney+',
+          img: require('../assets/imagens/disney.png'),
+          texto: 'Valor: R$ 27,90 por mês \n Clique para mais informações e recomendações',
+        },
+        {
+          id: 11,
+          nome: 'Star+',
+          img: require('../assets/imagens/star.png'),
+          texto: 'Planos a partir de: R$ 32,90 por mês \n Clique para mais informações e recomendações',
+        },
       ];
 
-    return(
-        <View style={styles.container}>
-            <Text> Teste</Text>
+      function renderItem({ item }){
+        return <View style={styles.opcao}>
+          <Image style={styles.imgConfig}source={item.img}/>
+          <View style={styles.infoEscolha}>
+              <Text style={styles.Texto1}>{item.nome}</Text>
+              <Text style={styles.Texto2}>{item.texto}</Text>
         </View>
-    );
-}
+      </View>
+      }
 
-const styles = StyleSheet.create({
-    
-    container: {
-      flex: 1,
-      backgroundColor: '#0A2172',
-      marginTop: Constants.statusBarHeight,
-    }
-  });
+      return (
+        <View style={styles.inicio}>
+        <FlatList
+          data={menu}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+          showsVerticalScrollIndicator={false}
+        />
+      </View>  
+    );}
+
+    const styles = StyleSheet.create({
+      inicio: {
+        flex: 1,
+      },
+      opcao: {
+        backgroundColor:'#0A2342',
+        flexDirection: 'row',
+        height: 90,
+        margin: 1,
+      },
+      infoEscolha:{
+        flexShrink:1,
+        alignItens: 'center',
+        justifyContent: 'center',
+      },
+      imgConfig:{
+          backgroundColor :'white',
+          height:80,
+          width: 80,
+          borderRadius: 40,
+          marginRight: 10,
+      },
+      Texto1: {
+        color: 'white',
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign:'left',
+      },
+      Texto2: {
+        color: 'white',
+        fontSize: 14,
+        flexShrink:1,
+      },
+    });
