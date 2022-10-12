@@ -4,8 +4,8 @@ import { View , Image, StyleSheet, FlatList, Text, TouchableOpacity} from 'react
 
 
 
-export default function Infos({navigation}){
-
+export default function Infos({route}){
+  console.log(route.params.id+1);
     const menu = [
         {
           id: 1,
@@ -75,24 +75,40 @@ export default function Infos({navigation}){
         },
       ];
 
-      function renderItem({ item }){
-        return <View style={styles.opcao}>
-          <Image style={styles.imgConfig}source={item.img}/>
-          <View style={styles.infoEscolha}>
-              <Text style={styles.Texto1}>{item.nome}</Text>
-              <Text style={styles.Texto2}>{item.texto}</Text>
-        </View>
-      </View>
-      }
 
       return (
         <View style={styles.inicio}>
-        <FlatList
-          data={menu}
-          renderItem={renderItem}
-          keyExtractor={item => item.id}
-          showsVerticalScrollIndicator={false}
-        />
+          <View style={styles.bloco}>
+            <Text style={styles.Texto1}> Nome do serviço de streaming</Text>
+            <Image style={styles.imgConfig} source={require('../assets/imagens/globoplay.jpg')} />
+            <Text style={styles.Texto2}> Hora de fazer uma lista com as informações dos streamings que vc quer 
+            colocar aqui.</Text>
+            <Text style={styles.Texto1}> Recomendações do catálogo</Text>
+
+            <View style={styles.recGeral}>
+              <View style={styles.rec}>
+                <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+            <Text style={styles.Texto2}> A casa do dragão (Série)</Text>
+              </View>
+              <View style={styles.rec}>
+              <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+            <Text style={styles.Texto2}> Hairspray (Filme)</Text>
+              </View>
+            </View>
+
+            <View style={styles.recGeral}>
+              <View style={styles.rec}>
+                <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+            <Text style={styles.Texto2}> Room 104 (Série)</Text>
+              </View>
+              <View style={styles.rec}>
+              <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+            <Text style={styles.Texto2}> Coringa (Filme)</Text>
+              </View>
+            </View>
+            
+          </View>
+        
       </View>  
     );}
 
@@ -100,6 +116,18 @@ export default function Infos({navigation}){
       inicio: {
         flex: 1,
       },
+      bloco: {
+        margin: 10,
+        backgroundColor: '#0A2172',
+          alignItems:'center',
+          justifyContent: 'flex-start',
+      },
+      recGeral:{
+        flexDirection: 'row',
+      },
+      rec:{
+        alignItems:'center',
+      }, 
       opcao: {
         backgroundColor:'#0A2342',
         flexDirection: 'row',
@@ -113,20 +141,28 @@ export default function Infos({navigation}){
       },
       imgConfig:{
           backgroundColor :'white',
-          height:80,
-          width: 80,
+          height:230,
+          width: 230,
           borderRadius: 40,
-          marginRight: 10,
+          margin: 10,
       },
+      imgRec:{
+        backgroundColor :'white',
+        height:200,
+        width: 200,
+        borderRadius: 40,
+        margin: 10,
+    },
       Texto1: {
         color: 'white',
-        fontSize: 15,
+        fontSize: 30,
         fontWeight: 'bold',
         textAlign:'left',
       },
       Texto2: {
         color: 'white',
-        fontSize: 14,
+        fontSize: 16,
         flexShrink:1,
+        lineHeight: 25,
       },
     });
