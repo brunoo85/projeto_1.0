@@ -75,42 +75,77 @@ export default function Infos({route}){
         },
       ];
 
-
-      return (
-        <View style={styles.inicio}>
-          <View style={styles.bloco}>
-            <Text style={styles.Texto1}> Nome do serviço de streaming</Text>
-            <Image style={styles.imgConfig} source={require('../assets/imagens/globoplay.jpg')} />
-            <Text style={styles.Texto2}> Hora de fazer uma lista com as informações dos streamings que vc quer 
-            colocar aqui.</Text>
-            <Text style={styles.Texto1}> Recomendações do catálogo</Text>
-
-            <View style={styles.recGeral}>
-              <View style={styles.rec}>
-                <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
-            <Text style={styles.Texto2}> A casa do dragão (Série)</Text>
+      if(route.params.id==1){
+        return (
+            <View style={styles.inicio}>
+              <View style={styles.bloco}>
+                <Text style={styles.Texto1}> Deu certo aqui o 1</Text>
+                <Image style={styles.imgConfig} source={require('../assets/imagens/star.png')} />
+                <Text style={styles.Texto2}> Hora de fazer uma lista com as informações dos streamings que vc quer 
+                colocar aqui.</Text>
+                <Text style={styles.Texto1}> Recomendações do catálogo</Text>
+    
+                <View style={styles.recGeral}>
+                  <View style={styles.rec}>
+                    <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> A casa do dragão (Série)</Text>
+                  </View>
+                  <View style={styles.rec}>
+                  <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Hairspray (Filme)</Text>
+                  </View>
+                </View>
+    
+                <View style={styles.recGeral}>
+                  <View style={styles.rec}>
+                    <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Room 104 (Série)</Text>
+                  </View>
+                  <View style={styles.rec}>
+                  <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Coringa (Filme)</Text>
+                  </View>
+                </View>
               </View>
-              <View style={styles.rec}>
-              <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
-            <Text style={styles.Texto2}> Hairspray (Filme)</Text>
-              </View>
-            </View>
-
-            <View style={styles.recGeral}>
-              <View style={styles.rec}>
-                <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
-            <Text style={styles.Texto2}> Room 104 (Série)</Text>
-              </View>
-              <View style={styles.rec}>
-              <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
-            <Text style={styles.Texto2}> Coringa (Filme)</Text>
-              </View>
-            </View>
-            
           </View>
-        
-      </View>  
-    );}
+        ); } else{
+          return (
+            <View style={styles.inicio}>
+              <View style={styles.bloco}>
+                <Text style={styles.Texto1}> Nome do serviço de streaming</Text>
+                <Image style={styles.imgConfig} source={require('../assets/imagens/globoplay.jpg')} />
+                <Text style={styles.Texto2}> Hora de fazer uma lista com as informações dos streamings que vc quer 
+                colocar aqui.</Text>
+                <Text style={styles.Texto1}> Recomendações do catálogo</Text>
+    
+                <View style={styles.recGeral}>
+                  <View style={styles.rec}>
+                    <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> A casa do dragão (Série)</Text>
+                  </View>
+                  <View style={styles.rec}>
+                  <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Hairspray (Filme)</Text>
+                  </View>
+                </View>
+    
+                <View style={styles.recGeral}>
+                  <View style={styles.rec}>
+                    <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Room 104 (Série)</Text>
+                  </View>
+                  <View style={styles.rec}>
+                  <Image style={styles.imgRec} source={require('../assets/imagens/perfilDev.jpg')} />
+                <Text style={styles.Texto2}> Coringa (Filme)</Text>
+                  </View>
+                </View>
+                
+              </View>
+            
+          </View>  
+        );
+        }
+     }
 
     const styles = StyleSheet.create({
       inicio: {

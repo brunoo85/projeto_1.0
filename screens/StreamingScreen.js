@@ -5,7 +5,9 @@ import { ScreenStackHeaderCenterView } from 'react-native-screens';
 import Constants from 'expo-constants';
 import Infos from '../components/Infos';
 
+
 export default function StreamingScreen({route}){
+
     console.log(route.params.id);
     return(
         <View style={styles.container}>
