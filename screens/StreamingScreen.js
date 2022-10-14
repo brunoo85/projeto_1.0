@@ -8,7 +8,6 @@ import Infos from '../components/Infos';
 
 export default function StreamingScreen({route}){
 
-    console.log(route.params.id);
     return(
         <View style={styles.container}>
         <StatusBar style="auto" />
