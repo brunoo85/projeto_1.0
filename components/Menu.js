@@ -17,7 +17,7 @@ export default function Menu({navigation}) {
 
     function renderItem({ item }){
       return <TouchableOpacity style={styles.opcao} onPress={() => navigation.navigate('StreamingScreen',{id: item.id})}>
-        <Image style={styles.imgConfig}source={item.img}/>
+        <Image style={styles.imgConfig}source={item.imgPerfil}/>
         <View style={styles.infoEscolha}>
             <Text style={styles.Texto1}>{item.nome}</Text>
             <Text style={styles.Texto2}>{item.texto}</Text>
