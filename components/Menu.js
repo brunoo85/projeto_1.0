@@ -1,5 +1,5 @@
-import React,  {useEffect , useState } from 'react';
-import { StyleSheet, Text, View, Image,FlatList , TouchableOpacity} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, Text, View, Image, FlatList , TouchableOpacity} from 'react-native';
 
 
 export default function Menu({navigation}) {
@@ -17,7 +17,7 @@ export default function Menu({navigation}) {
 
     function renderItem({ item }){
       return <TouchableOpacity style={styles.opcao} onPress={() => navigation.navigate('StreamingScreen',{id: item.id})}>
-        <Image style={styles.imgConfig}source={item.imgPerfil}/>
+        <Image style={styles.imgConfig}source={{uri: item.imgPerfil}}/>
         <View style={styles.infoEscolha}>
             <Text style={styles.Texto1}>{item.nome}</Text>
             <Text style={styles.Texto2}>{item.texto}</Text>
