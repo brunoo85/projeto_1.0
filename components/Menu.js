@@ -8,7 +8,7 @@ export default function Menu({navigation}) {
 
   useEffect(function(){
     async function getData(){
-      const response = await fetch('https://raw.githubusercontent.com/brunoo85/projeto_1.0/main/listaMenu.json');
+      const response = await fetch('https://raw.githubusercontent.com/brunoo85/projeto_1.0/main/listaMenu.json?token=GHSAT0AAAAAACC4OY6FEUVKLGQWYZBBR77IZD3WTBA');
       const menuServidor = await response.json();
        setMenu(menuServidor)
     }

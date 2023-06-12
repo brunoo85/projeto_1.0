@@ -13,13 +13,13 @@ export default function InfoDev(){
             aplicativo é uma ferramenta perfeita para você que está procurando praticidade e recomendações de qualidade.</Text>
               <Text style={styles.Texto1}>{'\n'} Sobre o Projeto</Text>
               <Text style={styles.Texto2}>    O seguinte projeto faz parte da avaliação da disciplina Desenvolvimento para dispositivos Móveis (ECT2525),
-            ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. Tratem de dar 5 estrelas no app pra minha nota ser maior.💋💋 </Text>
+            ministrada pelo professor Igor Rosberg, como primeira avaliação da matéria. </Text>
              <Text style={styles.Texto1}>{'\n'} Sobre o Desenvolvedor</Text>
               <Image style={styles.imgConfig} source={require('../assets/imagens/perfilDev.jpg')} />
-              <Text style={styles.Texto2}>    Bruno Cesar, atualmente com 21 anos, é um (sofredor) estudante de c&t e possui
-                bem mais carisma do que habilidades em programação, mas está indo bem, eu acho. </Text>
+              <Text style={styles.Texto2}>    Bruno Cesar, atualmente com 21 anos, é um estudante de c&t e possui
+                força de vontade e habilidades em programação em desenvolvimento. Está indo bem, eu acho. </Text>
                 <Text style={styles.Texto2}>    Este projeto foi idealizado em torno do mercado de séries pois é 
-                algo que ele possui muito interesse e tem propriedade pra falar do assunto (mentira).</Text>
+                algo que ele possui muito interesse apesar de ter quase nenhuma propriedade para falar sobre o assunto.</Text>
             </View>
         </View>
     );
